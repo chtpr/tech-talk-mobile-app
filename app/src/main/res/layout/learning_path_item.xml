@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/itemLearningPathLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="6dp"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    android:padding="6dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lpLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="6dp"
+        android:paddingBottom="2dp"
+        android:layout_marginEnd="4dp">
+
+        <ImageView
+            android:id="@+id/imgViewLPImage"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:padding="0dp"
+            tools:srcCompat="@tools:sample/avatars"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_image_placeholder"/>
+
+        <TextView
+            android:id="@+id/txtLPTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="Mastering Java"
+            android:textColor="@color/purple_500"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/recyclerview_margin_start"
+            app:layout_constraintStart_toEndOf="@id/imgViewLPImage"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/txtLPDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/recyclerview_margin_start"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@id/imgViewLPImage"
+            app:layout_constraintTop_toBottomOf="@id/txtLPTitle" />
+
+        <TextView
+            android:id="@+id/txtAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/recyclerview_margin_start"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="By John Doe"
+            android:textColor="@android:color/black"
+            android:textStyle="italic"
+            android:textSize="12sp"
+            android:paddingTop="2dp"
+            app:layout_constraintStart_toEndOf="@id/imgViewLPImage"
+            app:layout_constraintTop_toBottomOf="@id/txtLPDescription" />
+
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chpTopic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="@dimen/recyclerview_margin_start"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imgViewLPImage"
+            app:chipIcon="@drawable/ic_baseline_book_24"
+            app:chipIconSize="16dp"
+            app:chipIconTint="@color/white"
+            app:chipBackgroundColor="@color/purple_500"/>
+
+        <ImageView
+            android:id="@+id/imgResourcesList"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="6dp"
+            app:tint="@color/purple_500"
+            app:srcCompat="@drawable/ic_baseline_lp_resources"
+            app:layout_constraintEnd_toStartOf="@id/txtLPNumOfResources"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/txtLPNumOfResources"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:layout_marginRight="0dp"
+            android:text="6 Resources"
+            android:textColor="@color/purple_700"
+            android:textAllCaps="true"
+            android:textSize="12sp"
+            android:paddingTop="2dp"
+            android:paddingRight="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

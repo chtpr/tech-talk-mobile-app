@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="edu.neu.cs5520.numad22su_group19_techtalk.ui.resources.ResourcesFragment"
+        android:label="@string/title_resources"
+        tools:layout="@layout/fragment_resources" />
+
+    <fragment
+        android:id="@+id/navigation_resources_detail"
+        android:name="edu.neu.cs5520.numad22su_group19_techtalk.ui.resources.ResourcesDetailFragment"
+        android:label=  "@string/title_resources_detail"
+        tools:layout="@layout/fragment_resources_detail" />
+
+    <fragment
+        android:id="@+id/navigation_collections"
+        android:name="edu.neu.cs5520.numad22su_group19_techtalk.ui.collections.CollectionsFragment"
+        android:label="@string/title_collections_page"
+        tools:layout="@layout/fragment_collections" />
+
+    <fragment
+        android:id="@+id/navigation_collection_contents"
+        android:name="edu.neu.cs5520.numad22su_group19_techtalk.ui.collections.CollectionContentsFragment"
+        android:label="@string/title_collection_contents"
+        tools:layout="@layout/fragment_collection_contents" />
+
+    <fragment
+        android:id="@+id/navigation_learning_paths"
+        android:name="edu.neu.cs5520.numad22su_group19_techtalk.ui.learningpaths.LearningPathsFragment"
+        android:label="@string/title_learning_paths"
+        tools:layout="@layout/fragment_learning_paths_detail" />
+
+    <fragment
+        android:id="@+id/navigation_learning_paths_detail"
+        android:name="edu.neu.cs5520.numad22su_group19_techtalk.ui.learningpaths.LearningPathsDetailFragment"
+        android:label="@string/title_learning_paths_detail"
+        tools:layout="@layout/fragment_learning_paths" />
+
+    <fragment
+        android:id="@+id/navigation_learning_paths_add"
+        android:name="edu.neu.cs5520.numad22su_group19_techtalk.ui.learningpaths.LearningPathAddFragment"
+        android:label="@string/title_learning_paths_add"
+        tools:layout="@layout/fragment_learning_path_add" />
+
+    <fragment
+        android:id="@+id/navigation_user_profile"
+        android:name="edu.neu.cs5520.numad22su_group19_techtalk.ui.userprofile.UserProfileFragment"
+        android:label="@string/title_user_profile"
+        tools:layout="@layout/fragment_user_profile" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="edu.neu.cs5520.numad22su_group19_techtalk.ui.settings.SettingsFragment"
+        android:label="@string/title_settings" />
+
+    <fragment
+        android:id="@+id/navigation_login"
+        android:name="edu.neu.cs5520.numad22su_group19_techtalk.ui.login.LoginFragment"
+        android:label="@string/title_login" />
+
+    <fragment
+        android:id="@+id/navigation_add_collection"
+        android:name="edu.neu.cs5520.numad22su_group19_techtalk.ui.collections.AddNewCollectionFragment"
+        android:label="@string/title_add_collection" />
+
+    <fragment
+        android:id="@+id/navigation_collection_resource_detail"
+        android:name="edu.neu.cs5520.numad22su_group19_techtalk.ui.collections.CollectionResourceDetailFragment"
+        android:label="@string/title_resources_detail" />
+</navigation>

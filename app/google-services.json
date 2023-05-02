@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "895807761820",
+    "firebase_url": "https://techtalk-2cd77-default-rtdb.firebaseio.com",
+    "project_id": "techtalk-2cd77",
+    "storage_bucket": "techtalk-2cd77.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:895807761820:android:18bee861b3dcd3b6256c59",
+        "android_client_info": {
+          "package_name": "edu.neu.cs5520.numad22su_group19_techtalk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "895807761820-mrgqsi8nffa6m90pu7rq265tq01iiiu2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7n5bPSAZ3UDsRw7efcy6afR-n0YCOUx4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "895807761820-mrgqsi8nffa6m90pu7rq265tq01iiiu2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
